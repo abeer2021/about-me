@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&Amatic+SC:wght@400;700&family=Mountains+of+Christmas&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
+    <title>
+        Portfolio Page
+
+    </title>
+    <style>
+        #navbar {
+            background-color: #E1E5EA;
+            height: 50px;
+
+        }
+
+        #header {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+
+        }
+
+        .nav-link,
+        navbar {
+            color: #252525;
+        }
+
+        #brand {
+            color: #5D534A;
+            font-family: brand;
+            font-size: 25px;
+        }
+
+        section {
+            height: 100%;
+            padding-top: 160px;
+            padding-bottom: 160px;
+
+        }
+
+        #welcome-section {
+            background-color: #252525;
+            color: #E1E5EA;
+
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content-1 {
+            float: left;
+            width: 50%;
+        }
+
+        .content-2 {
+            float: right;
+            width: 50%;
+
+        }
+
+        #name {
+            font-size: 280px;
+            padding-top: 5px;
+            margin-top: 50px;
+            text-align: center;
+            color: #70AF85;
+            -webkit-text-fill-color: #252525;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #7870af;
+
+
+            z-index: -1;
+        }
+
+        h5 {
+            color: purple;
+        }
+
+        #p1 {
+
+            color: black;
+        }
+
+        #welcome-info {
+            font-family: 'Amatic SC', cursive;
+            font-weight: bold;
+            font-size: 50px;
+            margin-bottom: 15px;
+            text-decoration: underline dashed;
+            text-underline-position: under;
+
+
+        }
+
+        #desc {
+            font-family: 'Raleway', sans-serif;
+            font-size: 19px;
+
+
+
+        }
+
+        #skills {
+            background-color: #252525;
+            color: #E1E5EA;
+            width: auto;
+            height: auto;
+        }
+
+        .upper-list {
+            /* background-color:#B5EAEA; */
+            color: black;
+            font-size: 20px;
+            list-style: none;
+            width: 25%;
+            height: auto;
+            padding: 5px;
+            font-weight: bold;
+            font-family: Times New Roman;
+            text-align: center;
+            height: auto;
+            margin: 5px;
+
+        }
+
+        .lower-list {
+            background-color: #BEAEE2;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Times New Roman;
+            list-style: none;
+            width: 25%;
+            height: auto;
+            text-align: center;
+            height: auto;
+
+
+        }
+
+        #list {
+            margin-left: 85px;
+            margin-top: -100px;
+        }
+
+        .heading {
+            margin-bottom: 15px;
+            position: relative;
+            top: -100px;
+            margin-left: 25px;
+
+
+        }
+
+        /* #skill-img {
+            position: relative;
+            top: -290px;
+            left:300px;
+
+
+        } */
+
+        #skill-heading {
+            font-size: 100px;
+            color: #A2DBFA;
+            font-family: 'Mountains of Christmas', cursive;
+        }
+
+
+
+
+        .link-1 {
+            background-color: #FFDDCC;
+            color: #FF616D;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Times New Roman;
+            list-style: none;
+            width: 60%;
+
+            height: auto;
+            text-align: center;
+            height: auto;
+            margin-bottom: 15px;
+            margin-left: 15px;
+        }
+
+
+
+        #projects {
+            background-color: #252525;
+            color: #E1E5EA;
+            width: auto;
+            height: auto;
+        }
+
+        #project-tile {
+            font-size: 100px;
+
+            color: #fee440;
+            font-family: 'Mountains of Christmas', cursive;
+        }
+
+        .project-link-1 {
+            background-color: #e3dbfd;
+            color: balck;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Times New Roman;
+            list-style: none;
+            width: 60%;
+            padding: 5px;
+            height: auto;
+            text-align: center;
+            height: auto;
+            margin-bottom: 15px;
+            margin-left: 500px;
+        }
+
+
+        /* #project-img {
+            position: relative;
+            top: -100px;
+        } */
+
+        #contact {
+            background-color: #252525;
+            color: #E1E5EA;
+            width: auto;
+            height: 100%;
+
+        }
+
+        #contact-heading {
+
+            margin-left: 15px;
+            position: relative;
+            top: -100px;
+            font-size: 100px;
+            color: #d69f7e;
+            font-family: 'Mountains of Christmas', cursive;
+        }
+
+        #contact>p {
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-size: 25px;
+            margin-left: 15px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        /* #contact-1{
+            font-size:25px;
+            margin-left:15px;
+            font-family: 'Poppins', sans-serif;
+            list-style:none;
+            
+          } */
+        .card {
+            margin: 0 auto;
+            /* Added */
+            float: none;
+            /* Added */
+            margin-bottom: 10px;
+            /* Added */
+            position: relative;
+            left: 400px;
+        }
+
+        i {
+            margin-right: 5px;
+            color: white;
+        }
+
+        .contact-link {
+            color: white;
+            text-decoration: none;
+
+
+        }
+
+        .contact-link:visited {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .contact-link:hover {
+            color: #ff686b;
+            text-decoration: none;
+
+        }
+
+        #contact-2 {
+            display: flex;
+            float: right;
+            position: relative;
+            top: -100px;
+
+        }
+
+        #card-group {
+            margin-right: 300px;
+        }
+
+        .card-img-top2 {
+
+            height: 80px;
+            width: 200px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header id="header">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="brand" href="#welcome-section">My Profile</a>
+                <div class="navbar">
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--**********     WELCOME/HOME SECTION      *******************************-->
+    <section id="welcome-section">
+        <div class="content">
+            <div class="content-1">
+                <h1 id="name">abeer</h1>
+            </div>
+
+            <div class="content-2">
+                <h3 id="welcome-info"> Welcome to my page !! </h3>
+
+
+                <!-- for now comment out -->
+
+                <p id="desc"> Hello! My Name Is Abeer alanazi .I am 25 years old.I used to work in the field of machine
+                    learning and artifical intelligence sector. I am now entroled in the design field
+                    i consider myself new here and there is a lot to imrpove.
+                    Hence I am always learning new skills to enhance my views and to develop my self in this field.</p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--**********     SKILLS SECTION      *******************************-->
+    <section id="skills">
+        <!--       want to make a road map -->
+        <div class="heading">
+            <h1 id="skill-heading">Skills</h1>
+        </div>
+        <div class="content ">
+            <div class="content-1">
+                <div class="card-group" id="card-list">
+                    <div class="card mx-auto ">
+                        <img src="python.png" class="card-img-top1" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">About python</h5>
+                            <p id="p1" class="card-text">python is the language of most used app today such as Netflex,
+                                spotify and google, I learned this language during my gradution project
+                                and I can't wait to imrprove my skills even more
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="figma_owler_20190927_174650_original.png" class="card-img-top2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">About figma</h5>
+                            <p id="p1" class="card-text">Figma is a tool used for designing interfaces in a simple and
+                                efficient manner. I learned it during SDA bootcamp and still continue to learn even more
+                                and I still believe the alignments in this tool need improvments </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="visual-studio-code-codersera.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">About Visual studio code</h5>
+                            <p id="p1" class="card-text">This is the environment that host many useful languages such as
+                                web, python and more. I used it since 2016 and yet not found better envirmomnet than
+                                this
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-2">
+                <!-- <img id="skill-img" src="skill-art.jpg" alt="skill-art"> -->
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--**********     PROJECT SECTION      *******************************-->
+    <section id="projects">
+        <div class="heading">
+            <h1 id="project-tile"> Projects </h1>
+        </div>
+        <div class="content">
+            <div class="content-1">
+                <ul>
+                    <li class="project-link-1">
+                        <a href="https://abeer2021.github.io/python-page-/" class="proj-link" target="_blank"
+                            rel="noopener noreferrer">Python Page</a>
+
+                    </li>
+
+
+            </div>
+
+
+            <!-- <div id="content-2">
+                <img src="project.png" id="project-img">
+            </div> -->
+        </div>
+
+    </section>
+    <!--**********     CONTACT SECTION      *******************************-->
+    <section id="contact">
+        <h1 id="contact-heading"> Contact me here... </h1>
+        <p> Contact Me </p>
+
+
+
+        <div>
+
+            <ul id="contact-1">
+
+                <li>
+                    <a href="mailto:abeercs.2020@gmail.com?subject=Contacting from Website" target="_blank"
+                        rel="noopener noreferrer" class="contact-link" id="profile-link"> <i class="fab fa-github"> </i>
+                        Contact </a>
+                </li>
+                <li>
+                    <a href="https://github.com/abeer2021/" target="_blank" rel="noopener noreferrer"
+                        class="contact-link" id="profile-link"> <i class="fab fa-github"> </i> Github </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" rel="noopener noreferrer" class="contact-link"> <i
+                            class="fab fa-linkedin-in"> </i> LinkedIn </a>
+                </li>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
